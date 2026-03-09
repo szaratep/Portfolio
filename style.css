@@ -1,0 +1,28 @@
+header{
+    background-color: brown ;
+    margin: 0;
+    padding: 0px;
+}
+
+.h1_welcome{
+    color: white;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.ul_menu{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
