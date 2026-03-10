@@ -1,0 +1,34 @@
+.main_div{
+    background-color: aqua;
+}
+
+.img{
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.h1_Welcome{
+    text-align: center;
+    margin: 20px;
+}
+
+.content_MainPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+.text_main{
+    text-align: center;
+    font-size: 35px;
+}
+
+.img_flex{
+    display: flex;
+    gap: 120px;
+    font-size: 20px;
+    text-align: center;
+    padding: 25px;
+}
