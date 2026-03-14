@@ -74,7 +74,7 @@ li{
     color: var(--main-text);
 }
 
-.footer_contact{
+.footer_copyRigth{
     display: flex;
     justify-content: center;
     align-items: end;
@@ -83,7 +83,7 @@ li{
     font-size: 2rem;
 }
 
-.info_contact{
+.copyRigth{
     display: flex;
     text-align: center;
     flex-direction: column;
