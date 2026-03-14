@@ -93,6 +93,7 @@ li{
     margin: 4rem auto;
     padding: .5rem;
     box-shadow: 0px 0px 10px var(--placeholder);
+    background-color: #0a1628;
     border-radius: 3rem;
     width: 135rem;
 }
