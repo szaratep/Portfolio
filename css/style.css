@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Story Script", sans-serif;
 }
 
 html{
@@ -24,7 +25,6 @@ body{
     flex-direction: column;
     height: 100vh;
     justify-content: space-between;
-    font-family: "Story Script", sans-serif;
     background: linear-gradient(135deg, #0a0e1a 0%, #0d1b2e 50%, #0a1628 100%);
 }
 
