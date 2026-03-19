@@ -33,40 +33,57 @@
 
     <main>
         <section class="main_div">
-            <fieldset class="personal-info">
-                <legend>Informacion personal </legend>
-                <form action="">
-                    <label for="name">Nombre:
-                        <input type="text" class="name_in input" id="name" placeholder="Sebastian Zarate Pinilla">
-                    </label>
-                    <label for="phoneNumber">Telefono:
-                        <input type="number" class="numer_text input" id="phoneNumber" maxlength="10" placeholder="323......1">
-                    </label>
-                    <label for="">Correo:
-                        <input type="text" class="email input" id="email" placeholder="ejemplo@gmail.com">
-                    </label>
-            </fieldset>
-            
-            <fieldset class="area-contact">
-                <legend>Motivo de contacto</legend>
-                <label for="text_area">
-                    <textarea name="" class="text_area" id="text_area" placeholder="Escribe tu motivo de contacto aqui"></textarea>
-                </label>
-            </fieldset>
-            </form>
+            <form action="/my-handling-form-page" method="post">
+                <fieldset class="personal-info">
+                    <legend>Informacion personal </legend>
+                    <ul>
+                        <li>
+                            <label for="name">Nombre:
+                                <input type="text" class="name_in input" id="name"
+                                    placeholder="Sebastian Zarate Pinilla">
+                            </label>
+                        </li>
+                        <li>
+                            <label for="phoneNumber">Telefono:
+                                <input type="number" class="numer_text input" id="phoneNumber" maxlength="10"
+                                    placeholder="323......1">
+                            </label>
+                        </li>
+                        <li>
+                            <label for="">Correo:
+                                <input type="text" class="email input" id="email" placeholder="ejemplo@gmail.com">
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
 
-            <button class="button-send">Enviar</button>
+                <fieldset class="area-contact">
+                    <legend>Motivo de contacto</legend>
+                    <ul>
+                        <li>
+                            <label for="msg">
+                                <textarea name="" class="text_area" id="msg"
+                                    placeholder="Escribe tu motivo de contacto aqui"></textarea>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button class="button-send">Enviar</button>
+            </form>
         </section>
 
         <section class="main_div social-media">
             <div class="card">
-                <a href="https://www.facebook.com/sebastian.zarate.1276487/" target="_blank"><img class="img fb" src="./../img/DUiOg0mJTjz.webp" alt="logo de facebook"></a>
+                <a href="https://www.facebook.com/sebastian.zarate.1276487/" target="_blank"><img class="img fb"
+                        src="./../img/DUiOg0mJTjz.webp" alt="logo de facebook"></a>
             </div>
             <div class="card">
-                <a href="https://github.com/szaratep" target="_blank"><img class="img" src="./../img/GitHub_Invertocat_Logo.svg.webp" alt="logo de github"></a>
+                <a href="https://github.com/szaratep" target="_blank"><img class="img"
+                        src="./../img/GitHub_Invertocat_Logo.svg.webp" alt="logo de github"></a>
             </div>
             <div class="card">
-                <a href="https://www.instagram.com/sebazarate_11/" target="_blank"><img class="img ig" src="./../img/Instagram_icon.webp" alt="logo de instagram"></a>
+                <a href="https://www.instagram.com/sebazarate_11/" target="_blank"><img class="img ig"
+                        src="./../img/Instagram_icon.webp" alt="logo de instagram"></a>
             </div>
         </section>
     </main>
