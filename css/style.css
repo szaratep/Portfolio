@@ -26,6 +26,9 @@ body{
     height: 100vh;
     justify-content: space-between;
     background: linear-gradient(135deg, #0a0e1a 0%, #0d1b2e 50%, #0a1628 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 a{
