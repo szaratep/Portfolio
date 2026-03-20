@@ -6,6 +6,13 @@
     --placeholder: #5a7a96;
 }
 
+fieldset{
+    display: block;
+    padding: 1.5rem 1rem;
+    margin: 3rem;
+    border: none;
+}
+
 label, legend{
     color: var(--main-text);
     font-size: 2.5rem;
@@ -25,15 +32,6 @@ input, label{
     font-size: 2rem;
 }
 
-.text_area{
-    width: 100%;
-    resize: vertical;
-    min-height: 100px;
-    max-height: 250px;
-    padding: 1rem;
-    border-radius: 10px;
-}
-
 .input::placeholder{
     font-size: 2rem;
     color: var(--placeholder);
@@ -42,6 +40,15 @@ input, label{
 .input:focus{
     border: none;
     box-shadow: 0px 0px 25px var(--main-color);
+}
+
+.text_area{
+    width: 100%;
+    resize: vertical;
+    min-height: 100px;
+    max-height: 250px;
+    padding: 1rem;
+    border-radius: 10px;
 }
 
 .text_area::placeholder{
@@ -54,16 +61,11 @@ input, label{
     box-shadow: 0px 0px 25px var(--main-color);
 }
 
-fieldset{
-    display: block;
-    padding: 1.5rem 1rem;
-    margin: 3rem;
-    border: none;
-}
+
 
 .button-send{
     display: block;
-    width: 100rem;
+    width: 85%;
     padding: 1rem;
     border-radius: 3rem;
     margin: 20px auto;
@@ -102,3 +104,4 @@ fieldset{
     border: none;
     box-shadow: 0px 0px 10px white;
 }
+

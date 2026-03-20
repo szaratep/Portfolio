@@ -6,21 +6,17 @@
     --placeholder: #5a7a96;
 }
 
+.list_studies{
+    padding-left: 3rem;
+    margin: 10px 0;
+}
+
 h2{
     font-size: 4rem;
 }
 
 h3, li{
     font-size: 2rem;
-}
-
-.main_div{
-    padding: 15px;
-}
-
-.list_studies{
-    padding-left: 3rem;
-    margin: 10px 0;
 }
 
 .list_item{

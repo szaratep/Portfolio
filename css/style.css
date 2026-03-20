@@ -18,12 +18,13 @@ html{
     --main-text: #e8f0fe;
     --secont-text-color: #a0b4cc;
     --placeholder: #5a7a96;
+    --shadow: #0e264ad9;
 }
 
 body{
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     justify-content: space-between;
     background: linear-gradient(135deg, #0a0e1a 0%, #0d1b2e 50%, #0a1628 100%);
     background-attachment: fixed;
@@ -54,6 +55,15 @@ li{
     box-shadow: 0px 2px 10px var(--placeholder);
 }
 
+#check-menu, .logo_hamburger{
+    display: none;
+}
+
+.logo_hamburger{
+    height: 60px;
+    margin: 14px;
+}
+
 .ul_menu{
     display: flex;
     justify-content: end;
@@ -77,6 +87,15 @@ li{
     color: var(--main-text);
 }
 
+.main_div{
+    margin: 2rem auto;
+    padding: .5rem;
+    box-shadow: 0px 0px 10px var(--placeholder);
+    background-color: #0a1628;
+    border-radius: 3rem;
+    width: 135rem;
+}
+
 .footer_copyRigth{
     display: flex;
     justify-content: center;
@@ -93,11 +112,54 @@ li{
     gap: 10px;
 }
 
-.main_div{
-    margin: 4rem auto;
-    padding: .5rem;
-    box-shadow: 0px 0px 10px var(--placeholder);
-    background-color: #0a1628;
-    border-radius: 3rem;
-    width: 135rem;
+
+
+
+
+@media (max-width: 580px){
+    .nav_principal{
+        position: absolute;
+        top: 9rem;
+        left: 0;
+        width: 0;
+        height: 0;
+        z-index: 2;
+        display: none;
+    }
+
+    .ul_menu{
+        background-color: var(--shadow);
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+        padding: 20px
+    }
+
+    .logo_hamburger{
+        display: block;
+        cursor: pointer;
+        background-color: var(--text-bg-box);
+        border-radius: 10px;
+    }
+
+    #check-menu:checked ~ .nav_principal{
+        height: 20rem;
+        width: 100%;
+        opacity: 1;
+        display: block;
+    }
+}
+
+@media (max-width: 1450px){
+    .main_div{
+        width: 95%;
+        margin: 40px auto;
+    }
 }
