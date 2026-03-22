@@ -49,6 +49,7 @@ input, .label{
     max-height: 250px;
     padding: 1rem;
     border-radius: 10px;
+    font-size: 2rem;
 }
 
 .text_area::placeholder{

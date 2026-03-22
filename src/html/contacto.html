@@ -21,7 +21,8 @@
 <body>
     <header class="head_nav">
         <input type="checkbox" id="check-menu">
-        <label for="check-menu"><img src="./../img/bars-solid-full.svg" alt="logo de menu" class="logo_hamburger"></label>
+        <label for="check-menu"><img src="./../img/bars-solid-full.svg" alt="logo de menu"
+                class="logo_hamburger"></label>
         <nav class="nav_principal">
             <ul class="ul_menu">
                 <li class="item_menu"><a class="link_menu" href="./../index.html">Inicio</a></li>
@@ -35,42 +36,29 @@
 
     <main>
         <section class="main_div">
-            <form action="" method="">
+            <form action="https://formspree.io/f/mwvrjwpv" method="POST">
                 <fieldset class="personal-info">
                     <legend>Informacion personal </legend>
-                    <ul>
-                        <li>
-                            <label class="label" for="name">Nombre:
-                                <input type="text" class="name_in input" id="name"
-                                    placeholder="Sebastian Zarate Pinilla">
-                            </label>
-                        </li>
-                        <li>
-                            <label class="label" for="phoneNumber">Telefono:
-                                <input type="number" class="numer_text input" id="phoneNumber" maxlength="10"
-                                    placeholder="323......1">
-                            </label>
-                        </li>
-                        <li>
-                            <label class="label" for="">Correo:
-                                <input type="text" class="email input" id="email" placeholder="ejemplo@gmail.com">
-                            </label>
-                        </li>
-                    </ul>
+                    <label class="label" for="name">Nombre:
+                        <input type="text" class="name_in input" id="name" placeholder="Sebastian Zarate Pinilla" name="Name" required>
+                    </label>
+                    <label class="label" for="phoneNumber">Telefono:
+                        <input type="number" class="numer_text input" id="phoneNumber" maxlength="10"
+                            placeholder="323......1" name="Phone_Number" required>
+                    </label>
+                    <label class="label" for="email">Correo:
+                        <input type="email" class="email input" id="email" placeholder="ejemplo@gmail.com" name="Email" required>
+                    </label>
                 </fieldset>
 
                 <fieldset class="area-contact">
                     <legend>Motivo de contacto</legend>
-                    <ul>
-                        <li>
-                            <label class="label" for="msg">
-                                <textarea name="" class="text_area" id="msg"
-                                    placeholder="Escribe tu motivo de contacto aqui"></textarea>
-                            </label>
-                        </li>
-                    </ul>
+                    <label class="label" for="msg">
+                        <textarea name="" class="text_area" id="msg"
+                            placeholder="Escribe tu motivo de contacto aqui" name="Message" required></textarea>
+                    </label>
                 </fieldset>
-                <button class="button-send">Enviar</button>
+                <button class="button-send" type="submit">Enviar</button>
             </form>
         </section>
 
