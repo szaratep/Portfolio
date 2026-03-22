@@ -53,6 +53,7 @@ li{
 .head_nav{
     background: linear-gradient(135deg, #0a0e1a 0%, #0d1b2e 50%, #0a1628 100%); 
     box-shadow: 0px 2px 10px var(--placeholder);
+    padding: 15px;
 }
 
 #check-menu, .logo_hamburger{
@@ -61,7 +62,6 @@ li{
 
 .logo_hamburger{
     height: 60px;
-    margin: 14px;
 }
 
 .ul_menu{
@@ -112,11 +112,13 @@ li{
     gap: 10px;
 }
 
-
-
-
-
 @media (max-width: 580px){
+
+    .head_nav{
+        position: sticky;
+        top: 0px;
+    }
+
     .nav_principal{
         position: absolute;
         top: 9rem;
@@ -129,16 +131,9 @@ li{
 
     .ul_menu{
         background-color: var(--shadow);
-        width: 100%;
-        height: auto;
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        left: 0;
-        top: 0;
-        margin: 0;
         padding: 20px
     }
 
@@ -147,6 +142,7 @@ li{
         cursor: pointer;
         background-color: var(--text-bg-box);
         border-radius: 10px;
+        margin: 0;
     }
 
     #check-menu:checked ~ .nav_principal{
